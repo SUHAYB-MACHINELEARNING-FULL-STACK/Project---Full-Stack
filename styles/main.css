@@ -1,4 +1,6 @@
-
+.burger {
+    display: none;
+}
 
 /*-------------------١--------------------------*/
 /*                  ملحوظات                     */
@@ -103,10 +105,6 @@ classes
 /*----------------------------------------------*/
 * {
     font-family: sans-serif;
-}
-
-header .container button {
-    display: none;
 }
 header .container {
  display: flex;
@@ -372,16 +370,19 @@ input[placeholder="Enter your city"] {
        margin: 5px;
     }
     header .container .burger {
-       background-color: black;
+       background-color: white;
        border: none;
        outline: inherit;
        border-radius: 5px 5px 5px 5px;
-        position: relative;
-        right: 100px;
+        display: block;
+        margin-left: 325px;
     }
     .footer-nav {
         flex-wrap: wrap;
         justify-content:flex-start;
     }
-    
+    .hero .container .hero__image img {
+        height:200px;
+        width: 500px;
+    }
 }
