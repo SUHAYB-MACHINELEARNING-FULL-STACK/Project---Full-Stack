@@ -1,0 +1,387 @@
+
+
+/*-------------------١--------------------------*/
+/*                  ملحوظات                     */
+/*
+ملحوظة عامة:لقد  تركت لكم تعليقات لتساعدك علي تنظيم الملف بالشكل المثالي
+تأكد من أن آخر جزء هو الجزء الحاوي لكل ما هو متعلق بشكل الصفحة على الهواتف والتابلت
+إذا كان لديك أي سؤال من فضلك إرسل لي الكود وشرح المشكلة علي البريد الالكتروني
+tony@barmej.com
+*/
+/*----------------------------------------------*/
+
+/*----------------------١-----------------------*/
+/*
+Fonts & Font-faces سنقوم بوضع جميع الخطوط التي سنحتاجها هنا
+ملحوظة: إسم الخط هو إما
+Avenir Next 
+أو إن لم تجده فيمكنك استعمال خط 
+Lato
+*/
+/*---------------------------------------------*/
+
+
+/*----------------------٢-----------------------*/
+/*                  DEFAULTS                    */
+/*
+يجب عليك هنا وضع أي من الأنماط العامة الخاصة بوسوم مثل
+html, body, h1, h2, p 
+وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
+*/
+/*----------------------------------------------*/
+
+
+
+/*----------------------٣-----------------------*/
+/*               HELPER CLASSES                 */
+/*
+يجب عليك هنا وضع أي من الأنماط الخاصة بال
+classes
+التي ستقوم بإعادة إستخدامها في أكثر من مكان خلال عملك على الموقع 
+على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
+*/
+/*----------------------------------------------*/
+
+
+/*----------------------٤-----------------------*/
+/*                    LAYOUT                    */
+/*                البناء العام للصفحة           */
+/*----------------------------------------------*/
+
+    footer, .footer-nav{
+        display: flex;
+        margin: 100px;
+        justify-content: center;
+    }
+    .footer-nav h5 {font-size: 20px}
+.footer-nav ul {margin:25px}
+/*----------------------٥-----------------------*/
+/*                    HEADER                    */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٦-----------------------*/
+/*                     HERO                     */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٧-----------------------*/
+/*              MEET YOUR MATCH                 */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٨-----------------------*/
+/*               HOW IT WORKS                   */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٩-----------------------*/
+/*                 STORIES                      */
+/*----------------------------------------------*/
+
+
+
+/*----------------------١٠----------------------*/
+/*       Actions: Change A Life, Adopt A Pet    */
+/*----------------------------------------------*/
+
+
+
+/*---------------------١١-----------------------*/
+/*                    FOOTER                    */
+/*----------------------------------------------*/
+
+
+
+/*----------------------١٢----------------------*/
+/*                    Responsive                */
+/*       كل ما هو متعلق بالهواتف والتابلت       */
+/*----------------------------------------------*/
+* {
+    font-family: sans-serif;
+}
+
+header .container button {
+    display: none;
+}
+header .container {
+ display: flex;
+}
+header .container {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    direction: ltr;
+}
+header .container ul {
+    display: flex;
+    justify-content: space-around;
+    direction: ltr;
+}
+header .container ul li {
+   list-style-type: none;
+    margin-right: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.hero__desc {
+    margin-left: 100px;
+}
+.hero__desc h1 {
+    width: 80%;
+}
+.hero, .hero .continer {
+    width: 100%
+}
+.hero__desc a button {
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 100px;
+    border: 1px solid blue;
+    height: 50px;
+    width: 225px;
+    outline: inherit;
+    cursor: pointer;
+    opacity: 0.75;
+    margin-top: 20px;
+}
+.hero__desc a button:hover {
+    opacity: 1;
+}
+
+.hero .container {
+    width: 97.5%;
+}
+    .hero .container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+.hero .container .hero__image img{
+    width: 700px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.meetYourMatch {
+    background-color:#ecf1fa;
+    width: 90%;
+    margin-top: 10%;
+    border-radius: 25px;
+    max-height: 500px;
+    padding-bottom: 200px;
+}
+
+.widgets {
+        display: flex;
+width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.meetYourMatch__content .widgets{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.meetYourMatch__content .widget {
+    box-shadow: 1px 1px 1px 1px black;
+}
+.widgets .widget {
+     margin-top: 100px;
+    
+}
+li {
+    list-style-type: none;
+}
+#dog, #cat {
+    display: none;
+}
+.meetYourMatch h2 {
+    font-size: 50px;
+}
+.meetYourMatch__content form span {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.actions {
+    width: 79.9%;
+    margin-left: 100%;
+    margin-right: 100%;
+    background-color: #0181D5;
+    max-height: 600px;
+    padding: 200px;
+}
+.actions .container h2 {
+    color: white;
+}
+.stories .widgets .widget__desc a {
+    color:blue;
+}
+/*img[alt="dog image"] , img[alt="cat image"] {
+    margin-top: 50px;
+}*/
+input[placeholder="Enter your city"] {
+    color: darkblue;
+    border-radius: 50px 50px 50px 50px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    font-size: 30px;
+    border: 3px solid blue;
+    margin-top: 50px;
+    outline: inherit;
+}
+
+.meetYourMatch__content form .is-primary {
+    height: 100px;
+    padding-bottom: 80px;
+    padding-top: 10px;
+    width: 200px;
+    border: 3px solid darkblue;
+    background-color: darkblue;
+    font-size: 50px;
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: -200px;
+    outline: inherit;
+}
+.howItWorks .container {
+    margin-top: 400px;
+}
+.howItWorks .container h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+.howItWorks .container .widgets .widget {
+    margin: 100px;
+}
+.howItWorks .container .widgets .widget__desc p {
+    margin: auto;
+    width: 300px;
+}
+.stories .container .widgets .widget {
+    margin: 100px;
+}
+
+.stories, .stories .widgets {
+    background-color: #EEE;
+}
+.stories {
+    width:100%;
+}
+.actions .container h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.actions .container a {
+    margin: 10px;
+}
+.is-secondary {
+        background-color: white;
+
+}
+.actions .container a{
+    font-weight: bold;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    border-radius: 50px;
+    font-size: 25px;
+    margin-top: 100px;
+}
+.is-outline {
+    border: 1px solid darkblue;
+    background-color: transparent;
+    color: white;
+}
+@media only screen and (max-width: 1000px) {
+.widgets {
+    flex-wrap: wrap;
+}
+   .is-secondary {
+        background-color: white;
+
+}
+.actions .container a{
+    font-weight: bold;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    border-radius: 50px;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+    .actions .container a {
+    margin-left: -100px;
+        margin-right: -100px;
+        margin-top: 100px;
+        display:block;
+}
+.is-outline {
+    border: 1px solid darkblue;
+    background-color: transparent;
+    color: white;
+} 
+    header ul li {
+        display:none;
+    }
+    .howItWorks {
+        margin-top: 700px;
+    }
+    .howItWorks .container {
+    margin-top: 1000px;
+}
+    .hero .container {
+        display: block;
+    }
+    img[alt="Hero Image"] {
+      height: 300px;
+    }
+    .actions {
+    width: 25%;
+    background-color: #0181D5;
+    max-height: 600px;
+    padding: 200px;
+}
+        header .container .burger div {
+       background-color: black;
+       height: 5px;
+       width: 50px;
+       border-radius: 2px 2px 2px 2px;
+       margin: 5px;
+    }
+    header .container .burger {
+       background-color: black;
+       border: none;
+       outline: inherit;
+       border-radius: 5px 5px 5px 5px;
+        position: relative;
+        right: 100px;
+    }
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+    
+}
